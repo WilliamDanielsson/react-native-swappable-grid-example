@@ -1,12 +1,10 @@
-import SwappableGrid, {
-  SwappableGridRef,
-} from "@/components/SwappableGrid/SwappableGrid";
 import { IconButton } from "@/components/IconButton/IconButton";
 import Item from "@/components/Item/Item";
 import Slider from "@/components/Slider/Slider";
 import { Icon } from "@/constants/Icons";
 import { useState, useRef } from "react";
 import { Dimensions, StyleSheet, View, Pressable, Text } from "react-native";
+import { SwappableGrid, SwappableGridRef } from "react-native-swappable-grid";
 
 export default function HoldToDeleteScreen() {
   const [itemSize, setItemSize] = useState<number>(120);
