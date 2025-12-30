@@ -52,11 +52,11 @@ type Props = {
   reverse?: boolean;
 };
 
-export interface CustomDraggableGridRef {
+export interface SwappableGridRef {
   cancelDeleteMode: () => void;
 }
 
-const CustomDraggableGrid = forwardRef<CustomDraggableGridRef, Props>(
+const SwappableGrid = forwardRef<SwappableGridRef, Props>(
   (
     {
       children,
@@ -184,7 +184,7 @@ const CustomDraggableGrid = forwardRef<CustomDraggableGridRef, Props>(
 
     const trailingX = useDerivedValue(() => {
       const { x } = indexToXY({
-        index: order.value.length, // AFTER last draggable
+        index: order.value.length, // AFTER last swappable
         itemWidth,
         itemHeight,
         dynamicNumColumns,
@@ -432,4 +432,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CustomDraggableGrid;
+export default SwappableGrid;

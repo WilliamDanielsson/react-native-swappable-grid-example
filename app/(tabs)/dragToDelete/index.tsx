@@ -1,6 +1,6 @@
-import CustomDraggableGrid, {
-  CustomDraggableGridRef,
-} from "@/components/CustomDraggableGrid/CustomDraggableGrid";
+import SwappableGrid, {
+  SwappableGridRef,
+} from "@/components/SwappableGrid/SwappableGrid";
 import { IconButton } from "@/components/IconButton/IconButton";
 import Item from "@/components/Item/Item";
 import Slider from "@/components/Slider/Slider";
@@ -13,7 +13,7 @@ export default function DragToDeleteScreen() {
   const [items, setItems] = useState<number[]>(() =>
     Array.from({ length: 5 }, (_, i) => i)
   );
-  const gridRef = useRef<CustomDraggableGridRef>(null);
+  const gridRef = useRef<SwappableGridRef>(null);
 
   const { width } = Dimensions.get("window");
 
@@ -61,7 +61,7 @@ export default function DragToDeleteScreen() {
         </Pressable>
 
         <Pressable onPress={(e) => e.stopPropagation()}>
-          <CustomDraggableGrid
+          <SwappableGrid
             ref={gridRef}
             key={items.length.toString()}
             itemWidth={itemSize}
@@ -107,7 +107,7 @@ export default function DragToDeleteScreen() {
                 size={itemSize}
               />
             ))}
-          </CustomDraggableGrid>
+          </SwappableGrid>
         </Pressable>
       </View>
     </Pressable>

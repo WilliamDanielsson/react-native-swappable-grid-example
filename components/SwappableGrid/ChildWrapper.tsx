@@ -106,7 +106,7 @@ export default function ChildWrapper({
         wasReleasedAfterDeleteMode.value = false;
       } else if (!isDragging && !isActive) {
         // Keep delete mode active (waiting for user interaction)
-        // The tap gesture handler in CustomDraggableGrid will cancel it when user taps outside
+        // The tap gesture handler in SwappableGrid will cancel it when user taps outside
         showDelete.value = true;
       } else {
         // Keep delete mode active (item can still be held or released)

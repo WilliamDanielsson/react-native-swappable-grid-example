@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "reactNativeDraggableGrid",
-    "slug": "reactNativeDraggableGrid",
+    "name": "reactNativeSwappableGridExample",
+    "slug": "reactNativeSwappableGridExample",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "reactnativedraggablegrid",
+    "scheme": "reactnativedswappablegridexample",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

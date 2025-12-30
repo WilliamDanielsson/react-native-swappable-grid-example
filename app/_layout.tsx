@@ -6,7 +6,7 @@ import {
   ReanimatedLogLevel,
 } from "react-native-reanimated";
 
-// Strict mode is disabled because it gave warning in CustomDraggableGrid with useSharedValue() which I didn't managed to get rid of
+// Strict mode is disabled because it gave warning in SwappableGrid with useSharedValue() which I didn't managed to get rid of
 configureReanimatedLogger({
   level: ReanimatedLogLevel.warn, // Only log warnings & errors
   strict: false, // Disable strict mode warnings
