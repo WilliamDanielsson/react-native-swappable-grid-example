@@ -1,24 +1,31 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import { Slot } from "expo-router";
+import { View } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import {
+  configureReanimatedLogger,
+  ReanimatedLogLevel,
+} from "react-native-reanimated";
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+// Strict mode is disabled because it gave warning in CustomDraggableGrid with useSharedValue() which I didn't managed to get rid of
+configureReanimatedLogger({
+  level: ReanimatedLogLevel.warn, // Only log warnings & errors
+  strict: false, // Disable strict mode warnings
+});
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <View
+      style={[
+        {
+          backgroundColor: "#000",
+          width: "100%",
+          height: "100%",
+        },
+      ]}
+    >
+      <GestureHandlerRootView>
+        <Slot />
+      </GestureHandlerRootView>
+    </View>
   );
 }
