@@ -77,6 +77,7 @@ export default function HoldToDeleteScreen() {
 
         <Pressable onPress={(e) => e.stopPropagation()}>
           <SwappableGrid
+            hapticFeedback={true}
             ref={gridRef}
             key={items.length.toString()}
             itemWidth={itemSize}
