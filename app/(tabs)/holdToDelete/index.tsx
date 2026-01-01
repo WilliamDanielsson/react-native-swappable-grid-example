@@ -7,7 +7,7 @@ import { Dimensions, StyleSheet, View, Pressable, Text } from "react-native";
 import { SwappableGrid, SwappableGridRef } from "react-native-swappable-grid";
 
 export default function HoldToDeleteScreen() {
-  const [itemSize, setItemSize] = useState<number>(120);
+  const [itemSize, setItemSize] = useState<number>(100);
   const [items, setItems] = useState<number[]>(() =>
     Array.from({ length: 5 }, (_, i) => i)
   );
@@ -68,7 +68,7 @@ export default function HoldToDeleteScreen() {
             <Slider
               minValue={50}
               maxValue={width - 40}
-              initialValue={120}
+              initialValue={100}
               valueCallback={(value: number) => setItemSize(value)}
               style={{ width: "100%" }}
             />

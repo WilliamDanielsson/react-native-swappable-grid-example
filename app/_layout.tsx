@@ -1,6 +1,7 @@
 import { Slot } from "expo-router";
 import { View } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { StatusBar } from "expo-status-bar";
 import {
   configureReanimatedLogger,
   ReanimatedLogLevel,
@@ -23,6 +24,7 @@ export default function RootLayout() {
         },
       ]}
     >
+      <StatusBar style="light" />
       <GestureHandlerRootView>
         <Slot />
       </GestureHandlerRootView>
