@@ -13,12 +13,62 @@ A comprehensive example project demonstrating the [`react-native-swappable-grid`
 - **Smooth Animations**: Wiggle animations and smooth transitions powered by React Native Reanimated
 - **Haptic Feedback**: Enhanced user experience with haptic feedback
 
-## 📱 Screenshots
+## 📱 Demo
 
-The app includes two example screens accessible via bottom tab navigation:
+<h3 align="center">
+  Drag and re-order items
+</h3>
 
-1. **Hold to Delete** - Long-press an item to enter delete mode
-2. **Drag to Delete** - Drag items to the trashcan to delete them
+<div align="center">
+  <img src="./assets/re-order.gif" width="300" height="auto" />
+</div>
+
+</br>
+</br>
+
+<h3 align="center">
+  Add new items
+</h3>
+
+<div align="center">
+  <img src="./assets/add-items.gif" width="300" height="auto" />
+</div>
+
+</br>
+</br>
+
+<h3 align="center">
+  The grid can have handle any item size and adjustes itself dynamically
+</h3>
+
+<div align="center">
+  <img src="./assets/re-size.gif" width="300" height="auto" />
+</div>
+
+</br>
+</br>
+
+<h3 align="center">
+  Hold still to delete items
+</h3>
+
+<div align="center">
+  <img src="./assets/hold-to-delete.gif" width="300" height="auto" />
+</div>
+
+</br>
+</br>
+
+<h3 align="center">
+  Drag to delete items
+</h3>
+
+<div align="center">
+  <img src="./assets/drag-to-delete.gif" width="300" height="auto" />
+</div>
+
+</br>
+</br>
 
 ## 🚀 Getting Started
 
