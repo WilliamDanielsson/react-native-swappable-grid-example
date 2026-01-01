@@ -40,8 +40,25 @@ export default function DragToDeleteScreen() {
       }}
     >
       <View style={[styles.container]}>
-        <Text style={styles.heading}>Example 2: Drag to Delete</Text>
-        <Text style={styles.subheading}>
+        <Text style={styles.heading}>React Native Swappable Grid</Text>
+        <Text style={styles.description}>
+          Hold on items to drag and re-order them.
+        </Text>
+
+        <Text style={styles.description}>
+          Press the add button to add a new item
+        </Text>
+
+        <Text style={styles.description}>
+          Use the slider to change item size
+        </Text>
+
+        <View style={styles.line} />
+
+        <Text style={styles.description}>
+          <Text style={{ fontWeight: "bold", color: "white" }}>
+            Example 2 - Drag to Delete:
+          </Text>{" "}
           Drag an item into the trashcan to delete it
         </Text>
 
@@ -76,7 +93,7 @@ export default function DragToDeleteScreen() {
             }
             style={{ marginTop: 10, paddingBottom: itemSize }}
             wiggle={{ duration: 125, degrees: 1.5 }}
-            longPressMs={300}
+            holdToDragMs={300}
             onDelete={handleDelete}
             deleteComponent={
               <View style={styles.deleteComponent}>
@@ -126,12 +143,18 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#fff",
     marginTop: 20,
-    marginBottom: 8,
+    marginBottom: 10,
   },
-  subheading: {
+  description: {
     fontSize: 14,
     color: "#999",
-    marginBottom: 10,
+    marginBottom: 4,
+  },
+  line: {
+    width: "90%",
+    height: 1,
+    backgroundColor: "#999",
+    marginVertical: 10,
   },
   sliderRow: {
     display: "flex",
@@ -140,6 +163,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingRight: 100,
     width: "100%",
+    marginTop: 12,
   },
   sliderHeading: {
     color: "white",

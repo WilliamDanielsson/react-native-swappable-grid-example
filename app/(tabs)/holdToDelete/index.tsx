@@ -40,9 +40,26 @@ export default function HoldToDeleteScreen() {
       }}
     >
       <View style={[styles.container]}>
-        <Text style={styles.heading}>Example 1: Hold to Delete</Text>
-        <Text style={styles.subheading}>
-          Hold an item still for to show delete button
+        <Text style={styles.heading}>React Native Swappable Grid</Text>
+        <Text style={styles.description}>
+          Hold on items to drag and re-order them.
+        </Text>
+
+        <Text style={styles.description}>
+          Press the add button to add a new item
+        </Text>
+
+        <Text style={styles.description}>
+          Use the slider to change item size
+        </Text>
+
+        <View style={styles.line} />
+
+        <Text style={styles.description}>
+          <Text style={{ fontWeight: "bold", color: "white" }}>
+            Example 1 - Hold to Delete:
+          </Text>{" "}
+          Hold an item still for 1000ms to enter Delete Mode
         </Text>
 
         <Pressable onPress={(e) => e.stopPropagation()}>
@@ -76,7 +93,8 @@ export default function HoldToDeleteScreen() {
             }
             style={{ marginTop: 10, paddingBottom: 100 }}
             wiggle={{ duration: 125, degrees: 1.5 }}
-            longPressMs={300}
+            holdToDragMs={300}
+            holdStillToDeleteMs={1000}
             onDelete={handleDelete}
           >
             {items.map((itemId) => (
@@ -109,12 +127,18 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#fff",
     marginTop: 20,
-    marginBottom: 8,
+    marginBottom: 10,
   },
-  subheading: {
+  description: {
     fontSize: 14,
     color: "#999",
-    marginBottom: 10,
+    marginBottom: 4,
+  },
+  line: {
+    width: "90%",
+    height: 1,
+    backgroundColor: "#999",
+    marginVertical: 10,
   },
   sliderRow: {
     display: "flex",
@@ -123,6 +147,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingRight: 100,
     width: "100%",
+    marginTop: 12,
   },
   sliderHeading: {
     color: "white",

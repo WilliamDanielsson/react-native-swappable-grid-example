@@ -32,12 +32,14 @@ The app includes two example screens accessible via bottom tab navigation:
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/WilliamDanielsson/react-native-swappable-grid-example.git
    cd react-native-swappable-grid-example
    ```
 
 2. Navigate to the project directory:
+
    ```bash
    cd reactNativeSwappableGridExample
    ```
