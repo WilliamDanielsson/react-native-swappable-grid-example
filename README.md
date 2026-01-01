@@ -1,5 +1,9 @@
 # React Native Swappable Grid Example
 
+<div align="center">
+  <img src="./assets/logo.png" width="300" height="auto" />
+</div>
+
 A comprehensive example project demonstrating the [`react-native-swappable-grid`](https://www.npmjs.com/package/react-native-swappable-grid) library. This Expo app showcases two different deletion patterns for a swappable grid component with drag-and-drop functionality.
 
 ## 🎯 Features
