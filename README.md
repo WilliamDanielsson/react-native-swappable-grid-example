@@ -218,3 +218,9 @@ This project is provided as an example. Please refer to the license of the `reac
 ---
 
 Built with ❤️ using Expo and React Native
+
+## Contact
+
+For any question regarding the package, feel free to contact me at **william99danielsson@hotmail.com**
+
+Cheers! ✨
