@@ -1,7 +1,7 @@
 # React Native Swappable Grid Example
 
 <div align="center">
-  <img src="./assets/logo.png" width="300" height="auto" />
+  <img src="./assets/images/logo.png" width="300" height="auto" />
 </div>
 
 A comprehensive example project demonstrating the [`react-native-swappable-grid`](https://www.npmjs.com/package/react-native-swappable-grid) library. This Expo app showcases two different deletion patterns for a swappable grid component with drag-and-drop functionality.
@@ -24,7 +24,7 @@ A comprehensive example project demonstrating the [`react-native-swappable-grid`
 </h3>
 
 <div align="center">
-  <img src="./assets/re-order.gif" width="300" height="auto" />
+  <img src="./assets/gifs/re-order.gif" width="300" height="auto" />
 </div>
 
 </br>
@@ -35,7 +35,7 @@ A comprehensive example project demonstrating the [`react-native-swappable-grid`
 </h3>
 
 <div align="center">
-  <img src="./assets/add-items.gif" width="300" height="auto" />
+  <img src="./assets/gifs/add-items.gif" width="300" height="auto" />
 </div>
 
 </br>
@@ -46,7 +46,7 @@ A comprehensive example project demonstrating the [`react-native-swappable-grid`
 </h3>
 
 <div align="center">
-  <img src="./assets/re-size.gif" width="300" height="auto" />
+  <img src="./assets/gifs/re-size.gif" width="300" height="auto" />
 </div>
 
 </br>
@@ -57,7 +57,7 @@ A comprehensive example project demonstrating the [`react-native-swappable-grid`
 </h3>
 
 <div align="center">
-  <img src="./assets/hold-to-delete.gif" width="300" height="auto" />
+  <img src="./assets/gifs/hold-to-delete.gif" width="300" height="auto" />
 </div>
 
 </br>
@@ -68,7 +68,7 @@ A comprehensive example project demonstrating the [`react-native-swappable-grid`
 </h3>
 
 <div align="center">
-  <img src="./assets/drag-to-delete.gif" width="300" height="auto" />
+  <img src="./assets/gifs/drag-to-delete.gif" width="300" height="auto" />
 </div>
 
 </br>

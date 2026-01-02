@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "reactNativeSwappableGridExample",
+    "name": "ReactNative Swappable Grid",
     "slug": "reactNativeSwappableGridExample",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/logo.png",
     "scheme": "reactnativeswappablegridexample",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,

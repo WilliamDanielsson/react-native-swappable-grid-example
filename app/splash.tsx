@@ -32,7 +32,7 @@ export default function SplashScreen() {
     <View style={styles.container}>
       <StatusBar style="light" />
       <Image
-        source={require("@/assets/logo-light.png")}
+        source={require("@/assets/images/logo-light.png")}
         style={styles.logo}
         resizeMode="contain"
       />
