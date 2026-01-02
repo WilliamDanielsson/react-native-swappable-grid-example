@@ -3,8 +3,17 @@ import Item from "@/components/Item/Item";
 import Slider from "@/components/Slider/Slider";
 import { Icon } from "@/constants/Icons";
 import { useState, useRef } from "react";
-import { Dimensions, StyleSheet, View, Pressable, Text } from "react-native";
+import {
+  Dimensions,
+  StyleSheet,
+  View,
+  Pressable,
+  Text,
+  Platform,
+} from "react-native";
 import { SwappableGrid, SwappableGridRef } from "react-native-swappable-grid";
+
+const { width, height } = Dimensions.get("window");
 
 export default function HoldToDeleteScreen() {
   const [itemSize, setItemSize] = useState<number>(90);
@@ -12,8 +21,6 @@ export default function HoldToDeleteScreen() {
     Array.from({ length: 5 }, (_, i) => i)
   );
   const gridRef = useRef<SwappableGridRef>(null);
-
-  const { width } = Dimensions.get("window");
 
   const handleDelete = (key: string) => {
     const itemIndex = parseInt(key, 10);
@@ -117,11 +124,11 @@ export default function HoldToDeleteScreen() {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 60,
-    paddingBottom: 40,
+    paddingBottom: 160,
     paddingLeft: 16,
     paddingRight: 16,
-    flex: 1,
     backgroundColor: "black",
+    flex: 1,
   },
   heading: {
     fontSize: 24,
@@ -149,6 +156,7 @@ const styles = StyleSheet.create({
     paddingRight: 100,
     width: "100%",
     marginTop: 12,
+    marginBottom: Platform.OS === "android" ? 10 : 0,
   },
   sliderHeading: {
     color: "white",

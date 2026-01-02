@@ -3,7 +3,14 @@ import Item from "@/components/Item/Item";
 import Slider from "@/components/Slider/Slider";
 import { Icon } from "@/constants/Icons";
 import { useState, useRef } from "react";
-import { Dimensions, StyleSheet, View, Pressable, Text } from "react-native";
+import {
+  Dimensions,
+  StyleSheet,
+  View,
+  Pressable,
+  Text,
+  Platform,
+} from "react-native";
 import { SwappableGrid, SwappableGridRef } from "react-native-swappable-grid";
 
 export default function DragToDeleteScreen() {
@@ -132,7 +139,7 @@ export default function DragToDeleteScreen() {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 60,
-    paddingBottom: 40,
+    paddingBottom: 160,
     paddingLeft: 16,
     paddingRight: 16,
     flex: 1,
@@ -164,6 +171,7 @@ const styles = StyleSheet.create({
     paddingRight: 100,
     width: "100%",
     marginTop: 12,
+    marginBottom: Platform.OS === "android" ? 10 : 0,
   },
   sliderHeading: {
     color: "white",
