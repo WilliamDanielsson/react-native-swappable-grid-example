@@ -31,6 +31,17 @@ A comprehensive example project demonstrating the [`react-native-swappable-grid`
 </br>
 
 <h3 align="center">
+  Autoscroll near edges
+</h3>
+
+<div align="center">
+  <img src="./assets/gifs/autoscroll-near-edges.gif" width="300" height="auto" />
+</div>
+
+</br>
+</br>
+
+<h3 align="center">
   Add new items
 </h3>
 
