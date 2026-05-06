@@ -87,9 +87,9 @@ export default function HoldToDeleteScreen() {
             hapticFeedback={true}
             ref={gridRef}
             key={items.length.toString()}
-            itemWidth={itemSize}
-            itemHeight={itemSize}
-            gap={itemSize * 0.1}
+           
+            gap={itemSize * 0.1
+            }
             trailingComponent={
               <IconButton
                 iconSize={itemSize * 0.45}

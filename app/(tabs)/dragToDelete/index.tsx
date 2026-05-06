@@ -86,9 +86,7 @@ export default function DragToDeleteScreen() {
           <SwappableGrid
             ref={gridRef}
             key={items.length.toString()}
-            itemWidth={itemSize}
-            itemHeight={itemSize}
-            gap={itemSize * 0.1}
+            gap={2}
             trailingComponent={
               <IconButton
                 iconSize={itemSize * 0.5}
@@ -123,7 +121,7 @@ export default function DragToDeleteScreen() {
             {items.map((itemId) => (
               <Item
                 key={itemId}
-                color="black"
+                color={"black"}
                 name={`Item ${itemId + 1}`}
                 action={() => {}}
                 size={itemSize}

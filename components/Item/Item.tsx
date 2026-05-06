@@ -8,11 +8,16 @@ interface ItemProps {
 }
 
 export default function Item({ color, name, action, size }: ItemProps) {
+  const width = (Math.random() * ( 100 - 10)) + 30;
+  const height = (Math.random() * ( 100 - 10)) + 30;
+  const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+  
   return (
     <Pressable
       onPress={action}
       style={({ pressed }) => [
         styles.item,
+        { width: 80, height: 80, backgroundColor: randomColor },
         { transform: [{ scale: pressed ? 0.95 : 1 }] },
       ]}
     >
@@ -31,8 +36,6 @@ export default function Item({ color, name, action, size }: ItemProps) {
 const styles = StyleSheet.create({
   item: {
     backgroundColor: "#fff",
-    width: "100%",
-    height: "100%",
     display: "flex",
     justifyContent: "center",
     gap: 12,
@@ -42,7 +45,6 @@ const styles = StyleSheet.create({
     // Android shadow
     elevation: 8,
     borderRadius: "5%",
-    marginRight: 20,
     paddingLeft: 3,
     paddingRight: 3,
   },
